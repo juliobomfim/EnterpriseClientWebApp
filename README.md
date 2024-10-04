@@ -1,27 +1,30 @@
 # EnterpriseClientWebApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.7.
+Esta é uma aplicação web desenvolvida em Angular 18.2, projetada como uma Single Page Application (SPA) para gerenciar clientes empresariais. 
+A aplicação inclui telas de cadastro e listagem, consumindo o serviço `EnterpriseClientService` para interações com a API.
 
-## Development server
+## Funcionalidades
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Listagem de Clientes: Visualizar os clientes cadastrados.
+- Cadastro e Edição de Clientes: Inserir e editar dados dos clientes.
+- Remoção de Clientes: Excluir clientes.
 
-## Code scaffolding
+## Tecnologias
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- [Angular 18.2](https://angular.io/)
+- TypeScript
+- HTML
+- CSS
+- RxJS
 
-## Build
+## Requisitos
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Aplicação serviço em execução.
+- Alterar caminho do serviço na linha 5 (apiUrl) EnterpriseClientWebApp\src\app\Service\http-provider.service.ts caso necessário.
 
-## Running unit tests
+## Como executar
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Instale as dependencias `npm install`.
+- Inicie o servidor de desenvolvimento com `ng serve`.
+- Abra no navegador http://localhost:4200.
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
