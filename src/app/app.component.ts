@@ -30,7 +30,6 @@ export class AppComponent implements OnInit{
 
   addEnterpriseClient() {
     const entity = { enterpriseClientName: 'New Client', enterpriseScale: 'Small' };
-    console.log(this.enterpriseClients);
     this.httpProviderService.createEnterpriseClient(entity).subscribe({
       next: (response) => {
         this.enterpriseClients.push(response.data);
